@@ -51,6 +51,7 @@ Type=simple
 WorkingDirectory=/root/epower_lab
 Environment="SERVER_NUMBER=$SERVER_NUMBER"
 
+ExecStartPre=/usr/bin/git pull
 ExecStart=/root/epower_lab/.venv/bin/python /root/epower_lab/worker_run.py
 
 Restart=always
