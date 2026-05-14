@@ -7,9 +7,8 @@ SERVICE_NAME="worker.service"
 
 echo "=== Initial Setup ==="
 
-# Inputs
-read -p "Enter REPO_URL: " REPO_URL
-read -p "Enter SERVER_NUMBER: " SERVER_NUMBER
+REPO_URL="${REPO_URL}"
+SERVER_NUMBER="${SERVER_NUMBER}"
 
 echo "=== Updating packages ==="
 apt update
